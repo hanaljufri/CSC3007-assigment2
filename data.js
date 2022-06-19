@@ -1,4 +1,5 @@
-[{
+var data = [{
+
     "Crime": "Murder",
     "Number of Offences": 8
 },

@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="index.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <title>Crime Rate in SG</title>
 </head>
@@ -40,7 +39,7 @@ fetch ( 'https://data.gov.sg/api/action/datastore_search?resource_id=83c21090-bd
       .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("data.json", function (data) {
+    d3.csv("data.csv", function (data) {
 
       // X axis
       var x = d3.scaleBand()
